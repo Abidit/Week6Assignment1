@@ -2,7 +2,6 @@ package Adapter
 
 import Fragments.DisplayFragment
 import Model.Student
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.soft_user_clone.R
 
-class Adapter (
+class Data_Adapter (
     var listStudent: ArrayList<Student>,
     var context: DisplayFragment
 
-): RecyclerView.Adapter<Adapter.AdapterViewHolder>()
+): RecyclerView.Adapter<Data_Adapter.AdapterViewHolder>()
 {
     class AdapterViewHolder (view: View) : RecyclerView.ViewHolder(view){
         var name : TextView

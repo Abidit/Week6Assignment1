@@ -1,8 +1,6 @@
 package Fragments
 
-import Adapter.Adapter
-import Adapter.Frag_Adapter
-import Model.Student
+import Adapter.Data_Adapter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,7 +32,7 @@ class DisplayFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerView)
 
-        val adapter = Adapter(listedStudent, this)
+        val adapter = Data_Adapter(listedStudent, this)
         recyclerView.layoutManager = LinearLayoutManager(this.context,RecyclerView.VERTICAL,false)
         recyclerView.adapter = adapter
 

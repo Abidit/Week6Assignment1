@@ -38,9 +38,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun makeCurrentFrag(fragment: Fragment) =
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.pager2, fragment)
-            commit()
-        }
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.pager2, fragment)
+                commit()
+            }
 
 }

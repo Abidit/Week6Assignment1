@@ -7,7 +7,7 @@
 
     <WebView
         android:layout_width="match_parent"
-        android:id="@+id/websitelink"
+        android:id="@+id/website_link"
         android:layout_height="match_parent"
         />
 

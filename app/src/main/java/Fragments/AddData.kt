@@ -82,7 +82,7 @@ class AddData : Fragment() {
             image = "https://cdn.onlinewebfonts.com/svg/img_504768.png"
         }
         if(gender == "Female"){
-            image = "https://www.pngitem.com/pimgs/m/110-1104775_user-woman-business-woman-png-icon-transparent-png.png"
+            image = "https://webstockreview.net/images/woman-icon-png.png"
         }
         if (gender == "Other")
         {

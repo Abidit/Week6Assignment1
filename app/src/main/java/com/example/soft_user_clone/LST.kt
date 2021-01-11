@@ -9,5 +9,5 @@ import androidx.fragment.app.Fragment
 val listedStudent: ArrayList<Student> = ArrayList<Student>()
 
 fun doo(){ listedStudent.add(Student("Abidit Shrestha",20,"Kapan","Male","https://cdn.onlinewebfonts.com/svg/img_504768.png"))
-    listedStudent.add(Student("Issa STH",21,"Airport","Female","https://www.pngitem.com/pimgs/m/110-1104775_user-woman-business-woman-png-icon-transparent-png.png"))
+    listedStudent.add(Student("Issa STH",21,"Airport","Female","https://webstockreview.net/images/woman-icon-png.png"))
     listedStudent.add(Student("Abijeet STH",22,"Boudha","male","https://img.icons8.com/cotton/2x/gender.png"))}
