@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@color/teal_200">
 
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/imgg"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/ic_baseline_person_24"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgg"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvage"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="18sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/imgg"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        />
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/imgg"
+        app:layout_constraintTop_toBottomOf="@+id/tvage"
+        />
+
+    <ImageView
+        android:id="@+id/del"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="4dp"
+        android:src="@drawable/delete"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toEndOf="@+id/tvaddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/del"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
