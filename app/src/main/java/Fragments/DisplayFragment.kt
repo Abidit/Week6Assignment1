@@ -32,7 +32,7 @@ class DisplayFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerView)
 
-        val adapter = Data_Adapter(listedStudent, this)
+        val adapter = container?.let { Data_Adapter(listedStudent, it.context) }
         recyclerView.layoutManager = LinearLayoutManager(this.context,RecyclerView.VERTICAL,false)
         recyclerView.adapter = adapter
 

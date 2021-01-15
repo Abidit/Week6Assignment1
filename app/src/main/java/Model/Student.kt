@@ -5,9 +5,9 @@ import android.os.Parcelable
 
 data class Student(
 
-    val name: String?,
-    val age: Int?,
-    val address: String?,
-    val gender: String?,
-    var image : String?
+        var name: String?,
+        var age: Int?,
+        var address: String?,
+        var gender: String?,
+        var image : String?
 )

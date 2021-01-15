@@ -42,6 +42,7 @@ class AddData : Fragment() {
                 rbg()
                 Toast.makeText(context,"The user is added.",Toast.LENGTH_SHORT).show()
                     clear()
+
             }
         }
         return view

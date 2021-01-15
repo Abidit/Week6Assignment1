@@ -23,7 +23,7 @@ class WebFragment : Fragment() {
 
       var view = inflater.inflate(R.layout.fragment_web, container, false)
         var webb: WebView = view.findViewById(R.id.website_link)
-        webb!!.webViewClient = object : WebViewClient() {
+        webb.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 if (url != null) {
                     view?.loadUrl(url)
@@ -31,7 +31,7 @@ class WebFragment : Fragment() {
                 return true
             }
         }
-        webb!!.loadUrl("https://softwarica.edu.np/")
+        webb.loadUrl("https://softwarica.edu.np/")
 
         return view
     }

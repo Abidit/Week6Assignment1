@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,7 +18,7 @@
 
     <TextView
         android:id="@+id/tvname"
-        android:layout_width="180dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Full Name"
         android:textSize="18sp"
@@ -27,7 +28,7 @@
         />
     <TextView
         android:id="@+id/tvage"
-        android:layout_width="180dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Age"
         android:textSize="18sp"
@@ -50,11 +51,24 @@
         android:id="@+id/del"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/upd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/del"
         android:layout_margin="4dp"
-        android:src="@drawable/delete"
-        />
+        android:src="@drawable/ic_baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/gender"
@@ -62,7 +76,7 @@
         android:layout_height="wrap_content"
         android:text="gender"
         android:textSize="18sp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/tvaddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/del"
